@@ -28,8 +28,8 @@
       <file leaf-file-name="chat_bot.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chat_bot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13910356" vertical-offset="0" max-vertical-offset="647">
-              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.2503864" vertical-offset="0" max-vertical-offset="647">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -44,7 +44,6 @@
         <option value="$PROJECT_DIR$/app/views/index.blade.php" />
         <option value="$PROJECT_DIR$/socket.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/views/test_socket.blade.php" />
         <option value="$PROJECT_DIR$/phoebe.php" />
         <option value="$PROJECT_DIR$/app/Streameroni/ChatMessage.php" />
         <option value="$PROJECT_DIR$/app.php" />
@@ -58,6 +57,7 @@
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/app/Streameroni/ChatBot.php" />
         <option value="$PROJECT_DIR$/chat_bot.php" />
+        <option value="$PROJECT_DIR$/app/views/test_socket.blade.php" />
       </list>
     </option>
   </component>
@@ -306,28 +306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27820712" vertical-offset="108" max-vertical-offset="972">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61205566" vertical-offset="0" max-vertical-offset="882">
@@ -343,22 +321,6 @@
             <marker date="1421962978336" expanded="true" signature="-1:-1" placeholder="[...]" />
             <marker date="1421962978336" expanded="true" signature="-1:-1" placeholder="[...]" />
             <marker date="1421962978336" expanded="true" signature="-1:-1" placeholder="{&quot;preferred-install&quot;: &quot;dist&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/test_socket.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30602783" vertical-offset="0" max-vertical-offset="647">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <marker date="1421961596459" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421961596459" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421961596459" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421961596459" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421961596459" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421961596459" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421961596459" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -559,25 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sockrecieve.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.862442" vertical-offset="0" max-vertical-offset="720">
-          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-          <folding>
-            <marker date="1421965451192" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421965451192" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat_server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19474497" vertical-offset="0" max-vertical-offset="647">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Streameroni/Pusher.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31839257" vertical-offset="1180" max-vertical-offset="1854">
@@ -605,23 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Streameroni/ChatServer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0015455" vertical-offset="0" max-vertical-offset="1008">
-          <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-          <folding>
-            <marker date="1421965812649" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421965812649" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421965812649" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421965812649" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421965812649" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421965812649" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421965812649" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421965812649" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/set_env.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11128284" vertical-offset="0" max-vertical-offset="647">
@@ -641,30 +567,109 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27820712" vertical-offset="0" max-vertical-offset="972">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421947245349" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sockrecieve.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6955178" vertical-offset="0" max-vertical-offset="720">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+          <folding>
+            <marker date="1421965451192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421965451192" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Streameroni/ChatServer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48531684" vertical-offset="334" max-vertical-offset="1008">
+          <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+          <folding>
+            <marker date="1421965812649" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421965812649" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421965812649" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421965812649" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421965812649" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421965812649" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421965812649" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421965812649" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Streameroni/ChatBot.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4992272" vertical-offset="91" max-vertical-offset="1350">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.41576508" vertical-offset="649" max-vertical-offset="1404">
+          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
           <folding>
-            <marker date="1421966352782" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421966352782" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421966352782" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421966352782" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421966352782" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421966352782" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421966352782" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421966352782" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421966352782" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421966352782" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421966352782" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421966898822" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421966898822" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421966898822" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421966898822" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421966898822" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421966898822" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421966898822" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421966898822" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421966898822" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421966898822" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421966898822" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421966898822" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat_server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19474497" vertical-offset="0" max-vertical-offset="647">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/test_socket.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52704793" vertical-offset="163" max-vertical-offset="1080">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <folding>
+            <marker date="1421967885039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421967885039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421967885039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421967885039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421967885039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421967885039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421967885039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421967885039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421967885039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421967885039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421967885039" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chat_bot.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13910356" vertical-offset="0" max-vertical-offset="647">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.2503864" vertical-offset="0" max-vertical-offset="647">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding />
         </state>
       </provider>

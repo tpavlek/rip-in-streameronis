@@ -11,6 +11,7 @@ class ChatBot
 {
 
     protected $connection;
+    protected $channel;
 
     public function __construct()
     {
@@ -32,6 +33,10 @@ class ChatBot
         $this->connection->setPassword($password);
     }
 
+    public function setChannel($channel) {
+        $this->channel = $channel;
+    }
+
     public function setup()
     {
         $context = new \ZMQContext();
@@ -45,8 +50,9 @@ class ChatBot
         $phoebeEventDispatch->addSubscriber(new PingPongPlugin());
 
         // Join a startup channel.
-        $phoebeEventDispatch->addListener('irc.received.001', function (Event $event) {
-            $event->getWriteStream()->ircJoin('#sc2ctl');
+        $channel = $this->channel;
+        $phoebeEventDispatch->addListener('irc.received.001', function (Event $event) use ($channel) {
+            $event->getWriteStream()->ircJoin($channel);
         });
 
         // Handle any messages recieved in chat.
