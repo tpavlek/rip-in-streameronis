@@ -1,0 +1,65 @@
+@import "../resources/scss/forms";
+@import "../resources/scss/twitchemotes";
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #2B2B2B;
+}
+.chat-wrapper {
+  float:right;
+}
+.chat-holder {
+  position:relative;
+  height: 100%;
+}
+.chat-box {
+  box-sizing: border-box;
+  position: absolute; top: 0;
+  height: calc(100% - 131px);
+  width:400px;
+  background: #050505;
+  color:white;
+  padding: 0.5rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow-y: scroll;
+
+}
+
+.chat-message {
+  line-height: 1.5em;
+}
+
+.chat-user {
+  font-weight: bold;
+}
+.video-player-wrapper {
+  float:left;
+  position: relative;
+  width: calc(100% - 410px);
+}
+/* We are positioning an element over the stream to hijack twitch's click event */
+.video-player-overlay {
+  z-index: 15;
+  position:absolute;
+  height: 90%;
+  width: 100%;
+}
+.video-player {
+  position:relative;
+  height: 90%;
+}
+.control-buttons {
+  box-sizing: border-box;
+  text-align: right;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  height: 10%;
+  line-height: 10%;
+}
+.stream {
+  width: 100%;
+  height: 100%;
+}
+
+
