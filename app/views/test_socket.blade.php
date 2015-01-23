@@ -165,7 +165,7 @@
         }, 1000);
         */
 
-        var conn = new ab.Session('ws://localhost:9001',
+        var conn = new ab.Session('ws://test.sc2ctl.com:9001',
                 function() {
                     conn.subscribe('chat_messages', function(topic, data) {
                         chat("some_user", data);
