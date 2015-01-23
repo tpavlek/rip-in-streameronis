@@ -94,6 +94,6 @@ class Pusher implements WampServerInterface
     public function onChatMessage(ChatMessage $message)
     {
         $topic = $this->subscribedTopics['chat_messages'];
-        $topic->broadcast((string)$message);
+        $topic->broadcast($message->toJson());
     }
 }
