@@ -20,6 +20,7 @@
     </div>
     <div class="control-buttons">
         <a href="#" class="button">Subscribe ($5)</a>
+        <img src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png" class="twitch-connect" href="#" />
     </div>
 </div>
 
@@ -137,7 +138,24 @@
     </div>
 </div>
     <script src="http://autobahn.s3.amazonaws.com/js/autobahn.min.js"></script>
+    <script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>
     <script>
+
+        Twitch.init({clientId: 'sw3ypntqd8vmnbfy2oo45w9f8e9xril'}, function(error, status) {
+            if (status.authenticated) {
+                $('.twitch-connect').hide();
+            } else {
+                $('.twitch-connect').show();
+            }
+        });
+
+        $('.twitch-connect').click(function() {
+            Twitch.login({
+                scope: ['user_read', 'channel_read'],
+                redirect_uri: "http://localhost:8000/test"
+            });
+        });
+
         function chat(user, message) {
             var chatBox = $(".chat-box");
 
