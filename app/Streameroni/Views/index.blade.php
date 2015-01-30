@@ -63,6 +63,7 @@
         var conn = new ab.Session('ws://test.sc2ctl.com:9001',
                 function() {
                     conn.subscribe('chat_messages', function(topic, data) {
+                        data = JSON.parse(data);
                         chat(data.author, data.message);
                     });
                 },
