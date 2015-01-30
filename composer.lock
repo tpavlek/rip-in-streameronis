@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d49a64a922ec64a6e77beb5ee78f3fe6",
+    "hash": "3fa72786d5a3821f26769d00dddb680b",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -758,43 +758,54 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.6.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "f72392d0e6eb855118f5a84e89ac2d257c704abd"
+                "reference": "1fbe8c2641f2b163addf49cc5e18f144bec6b19f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f72392d0e6eb855118f5a84e89ac2d257c704abd",
-                "reference": "f72392d0e6eb855118f5a84e89ac2d257c704abd",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1fbe8c2641f2b163addf49cc5e18f144bec6b19f",
+                "reference": "1fbe8c2641f2b163addf49cc5e18f144bec6b19f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
                 "psr/log": "~1.0"
             },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
             "require-dev": {
-                "doctrine/couchdb": "dev-master",
-                "mlehner/gelf-php": "1.0.*",
-                "raven/raven": "0.5.*"
+                "aws/aws-sdk-php": "~2.4, >2.4.8",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
+                "phpunit/phpunit": "~4.0",
+                "raven/raven": "~0.5",
+                "ruflin/elastica": "0.90.*",
+                "videlalvaro/php-amqplib": "~2.4"
             },
             "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
                 "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
                 "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
                 "ext-mongo": "Allow sending log messages to a MongoDB server",
-                "mlehner/gelf-php": "Allow sending log messages to a GrayLog2 server",
-                "raven/raven": "Allow sending log messages to a Sentry server"
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "raven/raven": "Allow sending log messages to a Sentry server",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
+                "videlalvaro/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6.x-dev"
+                    "dev-master": "1.12.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Monolog": "src/"
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -805,8 +816,7 @@
                 {
                     "name": "Jordi Boggiano",
                     "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be",
-                    "role": "Developer"
+                    "homepage": "http://seld.be"
                 }
             ],
             "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
@@ -816,7 +826,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-07-28 22:38:30"
+            "time": "2014-12-29 21:29:35"
         },
         {
             "name": "nesbot/carbon",
@@ -959,168 +969,6 @@
                 "utf8"
             ],
             "time": "2015-01-12 08:05:15"
-        },
-        {
-            "name": "phergie/phergie-irc-client-react",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phergie/phergie-irc-client-react.git",
-                "reference": "00f8c50e9e35a786602a0621e9f968f0f39e09c9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phergie/phergie-irc-client-react/zipball/00f8c50e9e35a786602a0621e9f968f0f39e09c9",
-                "reference": "00f8c50e9e35a786602a0621e9f968f0f39e09c9",
-                "shasum": ""
-            },
-            "require": {
-                "monolog/monolog": "1.6.*",
-                "phergie/phergie-irc-connection": "1.*",
-                "phergie/phergie-irc-generator": "1.*",
-                "phergie/phergie-irc-parser": "1.*",
-                "php": ">=5.4.2",
-                "psr/log": "~1.0",
-                "react/dns": "0.4.*",
-                "react/event-loop": "0.4.*",
-                "react/promise": "~2.0",
-                "react/socket-client": "~0.4.2",
-                "react/stream": "~0.4.2"
-            },
-            "require-dev": {
-                "phake/phake": "2.0.0-beta2",
-                "phpunit/phpunit": "4.1.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phergie\\Irc\\Client\\React\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "description": "IRC client library built on React",
-            "keywords": [
-                "client",
-                "irc",
-                "react"
-            ],
-            "time": "2014-12-13 15:47:39"
-        },
-        {
-            "name": "phergie/phergie-irc-connection",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phergie/phergie-irc-connection.git",
-                "reference": "2bde216f91ff6b7c51bdd77abe356d8c658fa742"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phergie/phergie-irc-connection/zipball/2bde216f91ff6b7c51bdd77abe356d8c658fa742",
-                "reference": "2bde216f91ff6b7c51bdd77abe356d8c658fa742",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.1.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phergie\\Irc\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "description": "Data structure for containing information about an IRC client connection",
-            "keywords": [
-                "Connection",
-                "client",
-                "irc",
-                "server"
-            ],
-            "time": "2014-07-09 03:24:32"
-        },
-        {
-            "name": "phergie/phergie-irc-generator",
-            "version": "1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phergie/phergie-irc-generator.git",
-                "reference": "402a9c9dc341a8d5902faae11a9459ed41a59767"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phergie/phergie-irc-generator/zipball/402a9c9dc341a8d5902faae11a9459ed41a59767",
-                "reference": "402a9c9dc341a8d5902faae11a9459ed41a59767",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.1.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phergie\\Irc\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "description": "Generator for messages conforming to the IRC protocol",
-            "keywords": [
-                "generator",
-                "irc"
-            ],
-            "time": "2014-07-09 03:24:35"
-        },
-        {
-            "name": "phergie/phergie-irc-parser",
-            "version": "1.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phergie/phergie-irc-parser.git",
-                "reference": "712e55ba044ae2f407a61af1b8e692e538337014"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phergie/phergie-irc-parser/zipball/712e55ba044ae2f407a61af1b8e692e538337014",
-                "reference": "712e55ba044ae2f407a61af1b8e692e538337014",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.1.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phergie\\Irc\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "description": "Parser for messages conforming to the IRC protocol",
-            "keywords": [
-                "irc",
-                "parser"
-            ],
-            "time": "2014-07-09 03:24:36"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -1358,87 +1206,6 @@
             "time": "2012-12-21 11:40:51"
         },
         {
-            "name": "react/cache",
-            "version": "v0.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/reactphp/cache.git",
-                "reference": "9882ab5d8b00617baae83c6996f5a34668c11beb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/cache/zipball/9882ab5d8b00617baae83c6996f5a34668c11beb",
-                "reference": "9882ab5d8b00617baae83c6996f5a34668c11beb",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "react/promise": "~2.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "React\\Cache\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Async caching.",
-            "keywords": [
-                "cache"
-            ],
-            "time": "2014-02-02 01:11:26"
-        },
-        {
-            "name": "react/dns",
-            "version": "v0.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/reactphp/dns.git",
-                "reference": "8c5ccc35dcb4b06b70eb9201842363fac7b0f3cf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/dns/zipball/8c5ccc35dcb4b06b70eb9201842363fac7b0f3cf",
-                "reference": "8c5ccc35dcb4b06b70eb9201842363fac7b0f3cf",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "react/cache": "0.4.*",
-                "react/promise": "~2.0",
-                "react/socket": "0.4.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "React\\Dns\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Async DNS resolver.",
-            "keywords": [
-                "dns",
-                "dns-resolver"
-            ],
-            "time": "2014-04-12 14:09:10"
-        },
-        {
             "name": "react/event-loop",
             "version": "v0.4.1",
             "source": {
@@ -1482,50 +1249,6 @@
             "time": "2014-02-26 17:36:58"
         },
         {
-            "name": "react/promise",
-            "version": "v2.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/reactphp/promise.git",
-                "reference": "365fcee430dfa4ace1fbc75737ca60ceea7eeeef"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise/zipball/365fcee430dfa4ace1fbc75737ca60ceea7eeeef",
-                "reference": "365fcee430dfa4ace1fbc75737ca60ceea7eeeef",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "React\\Promise\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jan Sorgalla",
-                    "email": "jsorgalla@googlemail.com"
-                }
-            ],
-            "description": "A lightweight implementation of CommonJS Promises/A for PHP",
-            "time": "2014-12-30 13:32:42"
-        },
-        {
             "name": "react/socket",
             "version": "v0.4.2",
             "source": {
@@ -1565,48 +1288,6 @@
                 "Socket"
             ],
             "time": "2014-05-25 17:02:16"
-        },
-        {
-            "name": "react/socket-client",
-            "version": "v0.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/reactphp/socket-client.git",
-                "reference": "5b4ccbb9071f81280f20971cccd2abe980d027ca"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/socket-client/zipball/5b4ccbb9071f81280f20971cccd2abe980d027ca",
-                "reference": "5b4ccbb9071f81280f20971cccd2abe980d027ca",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "react/dns": "0.4.*",
-                "react/event-loop": "0.4.*",
-                "react/promise": "~2.0",
-                "react/stream": "0.4.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "React\\SocketClient\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Async connector to open TCP/IP and SSL/TLS based connections.",
-            "keywords": [
-                "Socket"
-            ],
-            "time": "2014-10-16 22:23:10"
         },
         {
             "name": "react/stream",
@@ -1749,75 +1430,6 @@
                 "stack"
             ],
             "time": "2014-11-23 20:37:11"
-        },
-        {
-            "name": "stil/curl-easy",
-            "version": "v1.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stil/curl-easy.git",
-                "reference": "14bb5b68873968fb8758a84d40ebdd5a33a01b8e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/stil/curl-easy/zipball/14bb5b68873968fb8758a84d40ebdd5a33a01b8e",
-                "reference": "14bb5b68873968fb8758a84d40ebdd5a33a01b8e",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/event-dispatcher": ">=2.2,<3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "cURL": "src/",
-                    "cURL\\Tests": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2013-05-30 18:26:32"
-        },
-        {
-            "name": "stil/phoebe",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stil/phoebe.git",
-                "reference": "7bef21bca472c01556780d1fc7e32ccc7781480d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/stil/phoebe/zipball/7bef21bca472c01556780d1fc7e32ccc7781480d",
-                "reference": "7bef21bca472c01556780d1fc7e32ccc7781480d",
-                "shasum": ""
-            },
-            "require": {
-                "phergie/phergie-irc-client-react": "~2.0.0",
-                "php": ">=5.4",
-                "stil/curl-easy": "~1.1.0",
-                "symfony/event-dispatcher": "~2.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phoebe\\": [
-                        "src/",
-                        "tests/"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "An IRC bot skeleton. Can listen on multiple IRC networks within single process.",
-            "time": "2015-01-02 17:58:40"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2706,18 +2318,9 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [
-        {
-            "alias": "1.0",
-            "alias_normalized": "1.0.0.0",
-            "version": "9999999-dev",
-            "package": "stil/phoebe"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "stil/phoebe": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

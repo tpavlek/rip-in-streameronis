@@ -1,0 +1,51 @@
+@import "vars";
+
+header.nav-header {
+
+
+  @include box-sizing(border-box);
+  width: 100%;
+  background-color: $navigation-header-background;
+  color: $navigation-header-foreground;
+  height: 3.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-left: 6rem;
+
+  h1 {
+    margin: 0;
+    display: inline-block; // We want the nav and logo to display on the same line
+    float:left;
+    height: 100%;
+    img { height: 100%; }
+  }
+
+  nav {
+    display:inline-block; // We want the nav and logo to display on the same line
+    padding-right: 10%;
+    float:right;
+    a {
+      text-decoration: none;
+      color: $navigation-header-foreground;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-size: 150%;
+
+      li {
+        display: inline-block; // We want the list to go horizontally
+        margin-right: 2rem;
+        line-height: 1.5em;
+      }
+      li:last-child {
+        margin-right: 0;
+      }
+
+      li.active { border-bottom: 4px solid $navigation-header-foreground; }
+
+      li:hover { border-bottom: 4px solid lighten($navigation-header-foreground, 50%)}
+    }
+  }
+}

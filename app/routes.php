@@ -1,9 +1,7 @@
 <?php
 
 Route::get('test', function() {
-        return View::make('ajaxtest');
-        //return file_get_contents("http://twitch.tv/chat/embed?channel=sc2ctl");
-        return View::make('test_socket');
+        return View::make('index');
 });
 
 Route::get('test_pull', function() {

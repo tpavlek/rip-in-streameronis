@@ -10,7 +10,6 @@
   "require": {
     "laravel/framework": "4.2.*",
     "barryvdh/laravel-ide-helper": "~1.11",
-    "stil/phoebe": "dev-master#7bef21bca472c01556780d1fc7e32ccc7781480d as 1.0",
     "react/zmq": "0.3.*",
     "cboden/ratchet": "0.3.*",
     "league/event": "~2.0"
