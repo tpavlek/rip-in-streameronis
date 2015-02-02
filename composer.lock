@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0326fc85acff4afdf2e6787cdc530c21",
+    "hash": "a679c6c2d37de3410327725abbdf93ae",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -123,12 +123,12 @@
             "version": "1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ClassPreloader/ClassPreloader.git",
+                "url": "https://github.com/mtdowling/ClassPreloader.git",
                 "reference": "2c9f3bcbab329570c57339895bd11b5dd3b00877"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ClassPreloader/ClassPreloader/zipball/2c9f3bcbab329570c57339895bd11b5dd3b00877",
+                "url": "https://api.github.com/repos/mtdowling/ClassPreloader/zipball/2c9f3bcbab329570c57339895bd11b5dd3b00877",
                 "reference": "2c9f3bcbab329570c57339895bd11b5dd3b00877",
                 "shasum": ""
             },
@@ -201,16 +201,16 @@
         },
         {
             "name": "depotwarehouse/oauth2-twitch",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tpavlek/oauth2-twitch.git",
-                "reference": "2eb960f22eec24b9dc8d8b013be7d81ef46ef78b"
+                "reference": "9bb6d7c3c2ac0777d26e1c717acc058ac1a52cc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tpavlek/oauth2-twitch/zipball/2eb960f22eec24b9dc8d8b013be7d81ef46ef78b",
-                "reference": "2eb960f22eec24b9dc8d8b013be7d81ef46ef78b",
+                "url": "https://api.github.com/repos/tpavlek/oauth2-twitch/zipball/9bb6d7c3c2ac0777d26e1c717acc058ac1a52cc5",
+                "reference": "9bb6d7c3c2ac0777d26e1c717acc058ac1a52cc5",
                 "shasum": ""
             },
             "require": {
@@ -233,7 +233,7 @@
                 }
             ],
             "description": "A Twitch provider for league/oauth2-client",
-            "time": "2015-02-02 21:43:57"
+            "time": "2015-02-02 17:19:28"
         },
         {
             "name": "depotwarehouse/toolbox",
@@ -608,6 +608,62 @@
                 "tokenizer"
             ],
             "time": "2015-01-10 01:09:28"
+        },
+        {
+            "name": "laravel/cashier",
+            "version": "v2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/cashier.git",
+                "reference": "b25149b4250b7c3fa91a03bbfc4e7e8ab7f81a59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/cashier/zipball/b25149b4250b7c3fa91a03bbfc4e7e8ab7f81a59",
+                "reference": "b25149b4250b7c3fa91a03bbfc4e7e8ab7f81a59",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "~4.1",
+                "illuminate/support": "~4.1",
+                "nesbot/carbon": "~1.0",
+                "php": ">=5.4.0",
+                "stripe/stripe-php": "~1.9",
+                "symfony/http-kernel": "~2.3"
+            },
+            "require-dev": {
+                "illuminate/routing": "~4.1",
+                "illuminate/view": "~4.1",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Laravel\\Cashier\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "keywords": [
+                "billing",
+                "laravel",
+                "stripe"
+            ],
+            "time": "2015-01-24 20:33:32"
         },
         {
             "name": "laravel/framework",
@@ -1507,6 +1563,54 @@
                 "stack"
             ],
             "time": "2014-11-23 20:37:11"
+        },
+        {
+            "name": "stripe/stripe-php",
+            "version": "v1.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stripe/stripe-php.git",
+                "reference": "022c3f21ec1e4141b46738bd5e7ab730d04f78cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/022c3f21ec1e4141b46738bd5e7ab730d04f78cc",
+                "reference": "022c3f21ec1e4141b46738bd5e7ab730d04f78cc",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.2"
+            },
+            "require-dev": {
+                "simpletest/simpletest": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/Stripe/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stripe and contributors",
+                    "homepage": "https://github.com/stripe/stripe-php/contributors"
+                }
+            ],
+            "description": "Stripe PHP Library",
+            "homepage": "https://stripe.com/",
+            "keywords": [
+                "api",
+                "payment processing",
+                "stripe"
+            ],
+            "time": "2015-01-22 05:01:46"
         },
         {
             "name": "swiftmailer/swiftmailer",

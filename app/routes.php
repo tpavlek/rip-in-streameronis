@@ -1,7 +1,7 @@
 <?php
 
 Route::get('test', function () {
-    return View::make('index');
+   dd(getenv('TWITCH_CLIENT_ID'));
 });
 
 Route::get('test_pull', function () {

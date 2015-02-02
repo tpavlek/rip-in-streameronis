@@ -1,0 +1,43 @@
+@import "vars";
+
+.section-header {
+  text-align: center;
+  font-size: 250%;
+  position:relative;
+  color: $section-header-color;
+}
+
+.section-header:after {
+  content:'';
+  width: 4rem;
+  position:absolute;
+  left: 0;
+  right: 0;
+  bottom: -1rem;
+  margin: 0 auto;
+  height: 4px;
+  background: $section-header-underline-color;
+}
+
+.section-subhead {
+  text-align: center;
+  font-size: 120%;
+  font-weight:400;
+}
+
+.highlight-header {
+  position:relative;
+  font-size: 180%;
+  margin-bottom:1rem;
+}
+
+.highlight-header:after {
+  content:'';
+  width: 4rem;
+  position:absolute;
+  left: 0;
+  bottom: -1rem;
+  height: 4px;
+  background: $section-header-underline-color;
+
+}

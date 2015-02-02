@@ -18,6 +18,9 @@ class AddUsersTable extends Migration
             $table->string('username');
             $table->string('email');
 
+            $table->string('stripe_customer_id')->nullable();
+
+
             $table->primary('id');
             $table->timestamps();
         });

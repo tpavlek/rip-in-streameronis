@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => true,
+	'debug' => false,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -122,7 +122,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-		'Depotwarehouse\OAuth2\Client\Twitch\FrameworkIntegration\Laravel\TwitchOAuth2ServiceProvider'
+		'Depotwarehouse\OAuth2\Client\Twitch\FrameworkIntegration\Laravel\TwitchOAuth2ServiceProvider',
+		'Laravel\Cashier\CashierServiceProvider'
 
 	),
 

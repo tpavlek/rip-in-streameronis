@@ -4,9 +4,15 @@ namespace Depotwarehouse\Streameroni\User;
 
 use Depotwarehouse\Toolbox\DataManagement\EloquentModels\BaseModel;
 use Illuminate\Auth\UserInterface;
+use Laravel\Cashier\BillableInterface;
+use Laravel\Cashier\BillableTrait;
 
-class User extends BaseModel implements UserInterface
+class User extends BaseModel implements UserInterface, BillableInterface
 {
+
+    use BillableTrait;
+
+    protected $dates = [ 'trial_ends_at', 'subscription_ends_at' ];
 
     public function __construct(array $attributes = array()) {
         parent::__construct($attributes);

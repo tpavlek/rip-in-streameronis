@@ -64,13 +64,17 @@ class AuthController extends Controller
 
             try {
                 $userLocal = $this->userRepository->find($user->getId());
-                return $this->redirectToUser($userLocal->username);
+
+                // If the account already exists, we'll attempt to update the details.
+                $this->userRepository->update($user->getId(), (array)$user);
+
+                return $this->redirectToUser($user->getId(), $user->getUsername());
 
             } catch (ModelNotFoundException $exception) {
 
                 try {
                     $userLocal = $this->userRepository->create($user->toArray());
-                    return $this->redirectToUser($userLocal->username);
+                    return $this->redirectToUser($user->getId(), $userLocal->username);
 
                 } catch (ValidationException $exception) {
 
@@ -87,7 +91,16 @@ class AuthController extends Controller
             ]));
     }
 
-    protected function redirectToUser($username) {
+    /**
+     * Logs in a user and redirects to his/her profile page.
+     *
+     * @param $user_id
+     * @param $username
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    protected function redirectToUser($user_id, $username)
+    {
+        Auth::loginUsingId($user_id);
         return Redirect::route('user.show', $username);
     }
 

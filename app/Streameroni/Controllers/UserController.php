@@ -18,6 +18,7 @@ class UserController extends Controller
     public function show($username)
     {
         $user = $this->userRepository->getByUsername($username);
-        return View::make('user.show', $user);
+        return View::make('user.show')
+            ->with('user', $user);
     }
 }
