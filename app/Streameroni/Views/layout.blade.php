@@ -16,12 +16,13 @@
             @if (Auth::check())
                 <li><a href="#">My Subs</a></li>
             @else
-                <li><a href="#">Login</a></li>
+                <li><a href="{{ URL::route('login') }}">Login</a></li>
             @endif
         </ul>
     </nav>
 </header>
 <div class="wrap">
+    @include('partials.errorPartial')
     @yield('content')
 </div>
 

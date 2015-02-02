@@ -1,0 +1,21 @@
+.notification {
+  text-align: center;
+  background: green;
+  padding: 0.5rem;
+
+  ul {
+    display: inline-block;
+  }
+}
+
+.notification.success {
+  background:green;
+}
+
+.notification.error {
+  background: #d9534f;
+}
+
+.notification.warn {
+  background: #f0ad4e;
+}

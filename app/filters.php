@@ -1,5 +1,9 @@
 <?php
 
+use Depotwarehouse\Streameroni\ViewComposers\ErrorPartialComposer;
+
+View::composer('partials.errorPartial', ErrorPartialComposer::class);
+
 /*
 |--------------------------------------------------------------------------
 | Application & Route Filters

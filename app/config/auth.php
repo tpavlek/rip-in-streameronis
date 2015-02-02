@@ -1,5 +1,7 @@
 <?php
 
+use Depotwarehouse\Streameroni\User\User;
+
 return array(
 
 	/*
@@ -28,7 +30,7 @@ return array(
 	|
 	*/
 
-	'model' => 'User',
+	'model' => User::class,
 
 	/*
 	|--------------------------------------------------------------------------

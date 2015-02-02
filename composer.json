@@ -12,7 +12,10 @@
     "barryvdh/laravel-ide-helper": "~1.11",
     "react/zmq": "0.3.*",
     "cboden/ratchet": "0.3.*",
-    "league/event": "~2.0"
+    "league/event": "~2.0",
+    "depotwarehouse/oauth2-twitch": "~1.0.2",
+    "illuminate/pagination": "dev-reduce-deps",
+    "depotwarehouse/toolbox": "~1.1.0"
   },
   "autoload": {
     "classmap": [
@@ -45,5 +48,11 @@
   "config": {
     "preferred-install": "dist"
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "stable",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/tpavlek/pagination"
+    }
+  ]
 }
